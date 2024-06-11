@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rethink sans';
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw 6vw;
+    height: 12.5vh;
+}
+
+nav:hover #nav-dropdown{
+    height: 150%;
+}
+#nav-list{
+    display: flex;
+    gap: 2vw;
+    padding: 0.8vh 0;
+    position: relative;
+    z-index: 10;
+}
+#nav-list h4{
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-weight: 550;
+}
+
+.nav-list-items h5{
+    margin-bottom: 1vw;
+    font-size: 0.9vw;
+    opacity: 0c;
+}
+.nav-list-items h5:nth-of-type(1){
+    margin-top: 2.5vw;
+}
+.nav-list-items h4{
+    margin-bottom:1.5vw;
+}
+.nav-list-items h5 span{
+    display: inline-block;
+}
+
+nav button{
+    background-color: #0BA34E;
+    border-radius: 50px;
+    padding: 1vw 1vw;
+    border:none;
+    outline: none;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: space-between;
+}
+.nav-dropdown{
+    width: 90%;
+    height: 0;
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    background-color: #111;
+    border-bottom: 1px solid #fff;
+}
+
+nav button span{
+    padding-right: 1vw;
+}
+nav button svg{
+    height: 1vw;
+    margin-left: 1vw;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 h1{
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+}
+#page1 h1:nth-of-type(1){
+    margin-top: 10vw;
+}
+
+#page1 h1 svg{
+    height: 6vw;
+    width: 6vw;
+    background-color: #0DA34E;
+    border-radius: 50%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
+
+#expertise{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+#expertise h4{
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-transform: lowercase;
+    padding: 5px 8px;
+    border: 1px solid #a5a5a5;
+    border-radius: 50px;
+
+}
+
+#expertise h4:nth-last-child(2){
+    border:none;
+    padding: 0;
+}
+
+#expertise h4{
+    margin: 0 1px;
+}
+
+.ad{
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 3vw;
+}
+
