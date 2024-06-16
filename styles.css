@@ -15,10 +15,12 @@ nav{
     position: fixed;
     display: flex;
     width: 100%;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-between;
-    padding: 2vw 6vw;
+    padding: 1.7vw 6vw;
     height: 12.5vh;
+    background-color: #111;
+    z-index: 10;
 }
 
 nav:hover #nav-dropdown{
@@ -40,16 +42,18 @@ nav:hover #nav-dropdown{
 .nav-list-items h5{
     margin-bottom: 1vw;
     font-size: 0.9vw;
-    opacity: 0c;
+    display: none;
+    overflow: hidden;
 }
-.nav-list-items h5:nth-of-type(1){
-    margin-top: 2.5vw;
-}
+ 
+
 .nav-list-items h4{
     margin-bottom:1.5vw;
 }
 .nav-list-items h5 span{
     display: inline-block;
+    transform:translateY(25px);
+
 }
 
 nav button{
@@ -66,11 +70,11 @@ nav button{
     justify-content: space-between;
 }
 .nav-dropdown{
-    width: 90%;
-    height: 0;
+    width: 88%;
+    height: 0vh;
     position: absolute;
     background-color: red;
-    top: 100%;
+    top: 12.5vh;
     background-color: #111;
     border-bottom: 1px solid #fff;
 }
@@ -93,13 +97,14 @@ nav button svg{
 }
 
 #page1 h1{
-    font-size: 8.5vw;
+    font-size: 9.5vw;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 8.5vw;
 }
 #page1 h1:nth-of-type(1){
-    margin-top: 10vw;
+    margin-top: 9vw;
+    margin-bottom: 0.7vw;
 }
 
 #page1 h1 svg{
@@ -108,11 +113,7 @@ nav button svg{
     background-color: #0DA34E;
     border-radius: 50%;
 }
-#page2{
-    height: 100vh;
-    width: 100%;
-    background-color: #111;
-}
+
 
 #expertise{
     display: flex;
@@ -129,7 +130,6 @@ nav button svg{
     padding: 5px 8px;
     border: 1px solid #a5a5a5;
     border-radius: 50px;
-
 }
 
 #expertise h4:nth-last-child(2){
@@ -143,7 +143,159 @@ nav button svg{
 
 .ad{
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     margin-top: 3vw;
+}
+
+.clients{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.clients .img-div img{
+    width:6vw;
+    height: 2.5vw;
+    padding: 0 1vw;
+}
+
+.clients-list{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin:0 auto;
+    overflow: hidden;
+}
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.blur-left{
+    height: 100%;
+    width: 10%;
+    background-color: red;
+    width: 20%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.blur-left{
+    height: 100%;
+    width: 10%;
+    background-color: red;
+    width: 20%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#page2{
+    height: 111vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    
+}
+
+.articles{
+    border-top: 1px solid white;
+    margin: 8vw 6vw;
+    height: 100vh;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section{
+    height: 100%;
+    width: 50%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2vw;
+}
+
+.left-top{
+    padding-top: 1vw;
+
+}
+.left-bottom{
+    padding-bottom: 3vw;
+
+}
+
+.right-section{
+    height: 100%;
+    width: 50%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rs-div{
+    display: flex;
+    height:30vh;
+    border-bottom: 1px solid rgb(58, 45, 45);
+    padding-top: 1.5vw;
+    position: relative;
+}
+
+.rs-div img{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+}
+
+.rs-div:nth-of-type(1){
+    padding-top: 0;
+}
+.rs-div h2{
+ width: 70%;
+}
+
+.span-div{
+    width: 30%;
+    text-align: right;
+}
+
+.span-div span{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #666;
+    font-size: 1vw;
+}
+.span-div svg{
+    width: 0.9vw;
+    height: 1vw;
+    margin-left:25px;
+}
+
+
+
+
+
+#page-3{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
 }
 
