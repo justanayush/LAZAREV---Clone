@@ -431,3 +431,91 @@ nav button svg{
     flex-direction: column;
     justify-content: space-between;
 }
+
+#page6{
+    width: 100%;
+    height: 55vh;
+    background-color: #fff;
+    
+}
+
+.content{
+    width: 63%;
+    margin-right: 5vw;
+    margin-left: auto;
+    margin-top: 5.5vw;
+    
+}
+.content span{
+    color: black;
+    float: left;
+    padding-top: 1vw;
+    margin-right: 13vw;
+    margin-bottom: 1.67vw;
+    font-size: 1.1vw;
+}
+.content p{
+    color:black;
+    font-size:2.3vw ;
+    font-weight: 400;
+}
+
+#page7{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFF;
+}
+.sec1, .sec2{
+    height: 75vh;
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    object-fit: cover;
+}
+.sec2{
+    margin-top: 6vw;
+}
+.left-top{
+    display: flex;
+    border-top: 1px solid #DFDFDF;
+    align-items: center;
+}
+.left-top h2{
+    font-size: 2.3vw;
+    color:black;
+    font-weight: lighter;
+}
+.left-top svg path{
+    fill: black;
+}
+.left-top svg{
+    width: 1vw;
+    height: 1vw;
+    margin-left: 30px;
+}
+.sec1-left, .sec2-left{
+    width: 22%;
+    height: 100%;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.sec1-right{
+    width: 78%;
+    background-image: url('images/06.webp');
+    background-size: cover;
+    background-position: center;
+}
+.sec2-right{
+    width: 80%;
+    height: 100%;
+    background-image: url('images/07.webp');
+    background-position: center;
+
+    background-size: cover;
+}
+.para{
+    color: black;
+    margin-top: 15vh;
+    font-size: 1.25vw;
+}
